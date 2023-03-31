@@ -1,0 +1,179 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css"/>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="cordova.js"></script>
+
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$("#btn1").click(function(){
+			$(location).attr("href", "https://df.nexon.com/df/home")
+		})
+		$("#btn2").click(function(){
+			$(location).attr("href", "https://dnfm.nexon.com/Event/2023/0323/1stAnniversary")
+		})
+		$("#btn3").click(function(){
+			$(location).attr("href", "https://cyphers.nexon.com/intro/202303")
+		})
+		$("#btn4").click(function(){
+			$(location).attr("href", "https://dd.nexon.com/ko/main")
+		})
+		$("#btn5").click(function(){
+			$(location).attr("href", "https://neople-recruit2023.com/")
+		})
+		$("#btn6").click(function(){
+			$(location).attr("href", "https://www.neople.co.kr/neople/main/")
+		})
+	})
+	</script>
+</head>
+
+
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>네오플 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="Logo.png" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">우리회사는?</a></li>
+				<li><a href="#Link1">현재 서비스중인 게임</a></li>
+				<button type="button" id="btn5">2023 공개채용 진행중!</button>
+				<button type="button" id="btn6">공식 홈페이지</button>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>네오플소개앱-김형빈</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>우리회사는?</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="Logo.png">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>Neople 이란 무슨뜻인가요?</h3>
+					<p>NEO + PEOPLE, NEO + PLEASURE
+						새로운 사람들이 만드는 새로운 재미를 뜻하는 네오플은
+						남들이 가지 않는 길, 꿈꾸지 않은 길에 도전하고 고민하며
+						새로운 재미를 만들어 나가고자 하는 의미를 담고 있습니다</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>우리회사의 캐치프레이즈</h3>
+					<p>  We Make Wonders!
+						‘멋진 사람들이 멋진 것을 만들어 낸다’
+						지금 이 순간에도 더 새롭고 원더한 목표를 향해 한걸음 씩 내딛고 있는 네오플은
+						‘멋진 사람들’이 더 ‘멋진 것’을 꿈꿀 수 있는
+						행복할 수 있는 회사가 되기 위해 노력합니다</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>특징</h3>
+					<p>원래는 캔디바나 신야구같은 캐주얼 게임을 전문으로 만들던 회사였다. 그래서 이후 만드는 게임인 던전앤파이터와 사이퍼즈 등에서 게임 시스템을 제대로 이해하고 있는지 의문인 운영을 보이기도 해서 '뇌없플'이라는 별명이 있다. 가끔씩 키리의 약속과 믿음같은 핵폭탄급 이벤트를 열을 때도 있어서 모기업 넥슨과 함께 사이좋게 욕을 먹고 있는 회사. 초창기는 시행착오가 많기는 했었어도 피드백에 소홀하거나 하진 않았는데, 넥슨에 인수합병된 이후에도 시행착오는 줄어들긴 커녕 더하다 못해 흘러넘치고, 예전엔 "뭐 그래도 이 정도면..."하고 넘어갈 수는 있었던 운영진들의 태도마저도 지금에 와서는 도통 답이 서질 않는다.
+
+						종합적으로 보면 문제 투성이의 회사지만 게임은 정말 재미있게 만들기 때문에 유저들 입장에서는 애증이 깃든 회사. 매력적이고 미려한 그림을 그리는 유능한 일러스트레이터들, 평균은 훨씬 넘는 훌륭한 음악을 만들거나 선곡하는 감각, 무엇보다 게임을 재미있게 만드는 컨텐츠를 개발할 능력 만큼은 있는 회사이다. 문제는 엉망인 서비스와 부족한 기술력으로 인해 괜찮은 엔진의 성능을 전혀 살리지 못하는 게임을 만드는가 하면, 덕지덕지 붙여놓은 스크립트와 코드가 꼬일대로 꼬인 탓에 뭐 하나 고치면 그 몇 배의 버그가 터져나오는 게임을 현재도 서비스 중이라는 점. 그럼에도 불구하고 그 두 작품이 대표작이고, 충분히 흥행했다는 점을 감안하면 유저들이 과소평가할 만큼 능력 없는 회사는 아니라는 말. 마케팅 및 이벤트에서의 실책은 이 회사가 인력이 몹시 부족한 소규모의 스튜디오인데다가, 운영면에서 넥슨의 영향력이 몹시 큰 것에서 비롯된다고 보아도 무방하다. 던파에 대한 개발권을 제외한 거의 모든 권한이 넥슨으로 넘어간 상황이기 때문.
+						
+						캐릭터를 디자인할 때는 이마 드러내기와 은발 캐릭터, 가터벨트를 엄청나게 선호한다.[1] 던파도 그렇지만[2] 사이퍼즈는 백발과 은발이 판을 친다.[3] 또한 다른 작품보다 유독 캐릭터 포즈가 과하게 나오기도 한다.
+						
+						2014년 2월 8일 던통에 올라온 글을 계기로 지금까지의 행적에 대한 재조명과 유저들의 동정을 받고 있는 중이다. 하지만 얼마 못 갔는지 해당 게시글은 삭제된 상태라서 볼 수 없다.
+						
+						이상하리만큼 이벤트 할 때마다 본 회사게임에서 일어난 사건들로 자학개그를 잘 친다. 던전앤파이터에서는 한 보드게임 이벤트 내의 일러스트에서는 이벤트 담당자가 한 유저를 붙들고는 "너 민수냐"라는 말을 하고 그 옆에는 밸런스 담당자가 오던노트를 들면서 계획대로를 속삭이고 있던 적도 있었고 만우절 장난중 하나로 본 회사를 까기 위해 만든 별명인 뇌없플을 그대로 던파 홈페이지에 대놓고 사용한 적이 있다. 이 경향은 사이퍼즈에 와서 더 심해져서 아예 키리의 약속과 믿음을 타라의 약속과 믿음으로 패러디하기도 하고 무음락 패치 건이 나온지 1주일만에 만우절 이벤트로 하향당한 본인의 궁극기 대사를 "우렁차게 정의구현"으로 해놓기도 하고 정말 다양하게 친다. 대개는 네오플 자체의 매력으로 치부하기도 하지만 사건을 일으켜놓고 반성을 하는 기미를 보이질 않는다고 싫어하는 유저도 있다.
+						
+						2014년 초부터 업계나 증권사 사이에 본사를 제주도로 옮긴다는 소문이 돌았는데, 정확히는 넥슨 본사를 제주도에 세울 때 세금 일부를 면세받은 적이 있어 무언가 보답을 해야 할 필요성이 있었다고 한다. 하지만 지방으로 이전한 기관이나 기업들이 기러기 아빠만 내려와 일함으로서 지역 경제가 크게 부흥하지 못한 전례들을 수차례 보여줬기에 제주도에서는 면세된 만큼 뱉어내든지, 회사를 하나 이상 옮겨올 것을 요구했고, 이에 마침 합병한 지 얼마 안 되어 힘이 없는 네오플이 지목됐다는 것. 그리고 이는 6월 3일자 공식 발표로 확정되었다.
+						
+						하지만 이 소식을 들은 직원들은 심각한 결정을 내려야 했는데, 제주도로 내려간다는건 수도권 인프라를 내던지고 이직조차 불가능에 가까워져 네오플에 뼈를 묻어야 하기 때문이다. 때문에 막말로 네오플을 나가도 딱히 아쉬울 게 없는 고급 인력들(특히 이미 터를 잡아버린 기혼자)은 대거 빠져나가고[4] 울며 겨자먹기로 제주도로 간 인력들도 버티지 못하고 빠져나가는 경우가 많아 아무리 복지를 탄탄하게 해도 만성적인 인력난에 시달리고 있다.
+						
+						그렇게 2015년 봄 제주도로 본사를 옮겼는데 네오플 사옥이 완공되기 이전까지 NXC[5] 건물을 빌려 썼었다가 10월에 완공 후 사옥에 원더그루라는 이름을 짓고 옮겼다.
+						
+						이후 2015년 3월 26일 던파와 사이퍼즈 홈페이지를 통해 공각기동대 온라인의 테스터를 모집하는 페이지가 나왔다. CBT기간은 4월 8일에서 4월 12일까지이다. 공각기동대 온라인에 참여한 테스터를 위한 이벤트는 참조.#
+						
+						그리고 4월 30일, 신캐 헌터 탄야의 추가와 동시에 전캐릭터 보이스를 삭제하고 테라로 팔려고 했지만 유저들의 반발에 부딫혀 불과 일주일만에 다시 패치를 통해 전캐릭터의 보이스를 돌려놓았다.[6]
+						
+						2010년대 후반 던전앤파이터의 중국에서의 엄청난 성공으로 사실상 넥슨의 순수익의 대부분을 캐리하는데[7], 본사가 제주도에 있어 제주도 총생산도 캐리하는 정도이다.
+						-나무위키-
+					</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>네오플소개앱-김형빈</h1>
+		</div>		
+	</div>
+
+	<div data-role="page" id="Link1" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>현재 서비스 중인 게임</h1>
+		</div>
+		<div data-role="content">
+			<div  style="text-align:center">
+				<img src="Logo.png">
+			</div>			
+
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e"></div>
+			
+		<div data-role="collapsible" data-collapsed="false">
+			<h3>던전앤파이터</h3>
+			<body>
+				<button type="button" id="btn1">던전앤파이터</button>
+			</body>
+		</div>
+
+		<div data-role="collapsible">
+			<h3>던전앤파이터M</h3>
+			<body>
+				<button type="button" id="btn2">던전앤파이터M</button>
+			</body>
+		</div>
+		<div data-role="collapsible">
+			<h3>사이퍼즈</h3>
+			<body>
+				<button type="button" id="btn3">사이퍼즈</button>
+			</body>
+		</div>
+		<div data-role="collapsible">
+			<h3>DNF DUEL</h3>
+			<body>
+				<button type="button" id="btn4">DNF DUEL</button>
+			</body>
+		</div>
+
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>네오플소개앱-김형빈</h1>
+		</div>
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h1>네오플소개앱-김형빈</h1>
+	</div>
+</div>	
+</body>
+</html>
