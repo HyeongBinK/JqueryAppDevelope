@@ -1,0 +1,238 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css"/>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="cordova.js"></script>
+
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	
+		$("#btnN").click(function(){
+			$(location).attr("href", "https://github.com/HyeongBinK?tab=repositories")
+		})
+		
+		$("#btnD").click(function(){
+			$(location).attr("href", "https://blog.naver.com/PostList.naver?blogId=godkim3904")
+		})
+	
+	})
+	</script>	
+</head>
+	
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>김형빈 포트폴리오 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="MainProfile.jpg" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">김형빈 소개</a></li>
+				<li><a href="#movie" data-rel="dialog">포트폴리오 영상</a></li>
+				<li><a href="#gallery">포트폴리오 이미지</a></li>
+				<li><a href="#Link">깃허브와 블로그 링크</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>포트폴리오-김형빈</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>김형빈 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="BlackCow.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>학력</h3>
+					<p>경성대학교 재학중(소프트웨어학과, 게임,VR융합전공)</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>특기</h3>
+					<p>사용언어 : C, C++, C# 사용툴 : Unity, Unreal Engine</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>자기소개</h3>
+					<p>간단하게나마 저가 게임클라이언트개발자라는 목표를 가지게 된 계기와 공부해온것에 대해 이야기를 해보겠습니다.
+
+						전 과거에 환경운동가라는 꿈을 가지고 환경공학과를 목표로 대학에 진학하였습니다. 
+						하지만 생각했던 것과 많이 달랏습니다. 그 결과 점점 학과공부에 흥미를 잃어가며 취미(게임)가 맞는 친구들과 어울리며 공부를 멀리하고 허송세월을 보냈습니다.
+						그리 시간을 보내다 보니 대학교 2학년이 되었습니다. 많은 친구가 휴학을 하고 군 복무를 하는 시기였고 저도 자연스레 친구들을 따라 휴학을하고 공군에 지원해 공군에서 급양병(취사병)으로 군 복무를 하였습니다.
+						군 복무 중 일과시간 외에 휴식 시간에 취미로 일본어 자격증(JLPT 3급)도 취득하고 토익도 공부하였습니다.
+						상병쯤 되자 막상 미래(전역 후, 졸업 후)에 무슨 일할까? 에 대한 불안감이 엄습했습니다. 그때부터 어떤 일을 하면 전력으로 그 길을 쫓을 수 있을지 많이 고민하였습니다. 
+						고민을 하던 중 취미생활로 게임을 즐겼었는데, 게임을 만들어보면 어떨까? 라는 생각이 들었습니다. 그러나 전공도 전혀 다르고, 코딩에 대해서도 무지하였습니다.
+						그래서 전역을 하면 일단 대학에 복학하여 컴퓨팅 기술과 관련된 과로 전과를 해야겠다고 생각했습니다. 
+						전역 후 복학까지 6개월가량 시간이 있었고 이때 C언어를 가르쳐주는 학원에 3개월 가량 다녔었습니다. 코딩이 생각보다 잘 맞았고 이 시기에 프로그래머가 내 적성에 맞다고 확신하였습니다.
+						전과를 2학년 2학기에 신청할 수 있었기에, 2학년 1학기까진 환경공학에 관련된 수업을 들었고 전과 신청 시기가 되어,
+						게임 제작은 컴퓨터공학보단 소프트웨어공학이 더 가깝다는 생각이 들어 소프트웨어 과로 전과하였습니다. 
+						막상 아무런 기초도 없이 소프트웨어 2학년 2학기 수업으로 편입하였고 대부분 1학년 교과에 학년 제한이 걸려있어
+						어쩔 수 없이 소프트웨어 학과의 2학년 2학기 수업을 수강하였습니다. 그 결과 수업을 쫓아가는 게 힘들었고 학점도 좋지 못했습니다.
+						스스로 이대론 안 되겠다 싶어서 게임프로그래밍을 전문으로 가르쳐주는 학원에 다니며 학교와 학원을 병행하였습니다. 학교에서는 주 언어로 자바를 가르쳐주었고 학원에서는 C언어부터 공부를 하였습니다.
+						2학년 2학기 말에 하교 중 우연히 간판에 융합 전공과 관련된 팜플렛이 있는 것을 보았습니다. 팜플렛을 통해 대학에 융합 전공으로 게임 VR 제작 융합 전공이 있다는 것을 알게 되었습니다.
+						당연히 게임 제작과 관련된 융합 전공이니 저가 목표로 한 게임개발자(게임클라이언트 개발)에 도움이 되겠다 싶어서 신청하였고 게임제작을 융합전공으로 같이 배우게 되었습니다.
+						
+						소프트웨어 학과에서는 컴퓨터언어로 Java를 배웠고 자료구조와 같은 기초를 공부하였으며
+						학원은 C 사용하여 간단한 실행파일을 똑같이 구현하거나 간단한 게임(오목, 턴제 RPG, 뱀 게임 같은 부류)을 제작하는 것을 공부하였습니다. 
+						그리고 게임 VR 융합 전공에서는 게임엔진(언리얼4(BP코딩) 에셋 제작에 대한 기초를 공부하였습니다. 
+						이때 에셋 제작을 공부하며 3D Max, Photoshop과 같은 툴도 만져보았고 디자이너(에셋 제작자)분들 과 연계하여 작업을 진행해 보았습니다.
+						
+						소프트웨어전공에서는 지속적으로 소프트웨어, 컴퓨터 기초에 대하여 공부하였습니다.
+						
+						융합 전공에선 유니티 보다는 Unreal 4 엔진을 위주로 수업을 하였습니다. 약간 언리얼이 디자이너 쪽에 친화되어 있다 보니 처음에 적응하긴 어려웠었습니다.
+						4학년 1학기에는 조별 과제로 3개월 동안 Unreal 4를 이용하여 디자인 전문적으로 하는 학우분들과 함께 3D RPG 게임을 만들었습니다.
+						3개월 동안 3명의인원으로 개발해야 하였지만 이왕 도전하는 거 난이도가 있어보이고 파고들 요소는 많은 제대로 된 게임을 만들어보고 싶어 3D RPG 게임을 선택하였었습니다. 
+						전 프로그래밍을 전담하였고 이 당시에는 BP(블루프린트)와 C++ Script(BP로 구현이 힘든 부분)를 이용하여 프로그래밍을 하였습니다.
+						인벤토리, 퀵 슬롯, 몬스터 AI, 몬스터 리젠시스템, 아이템 사용, 상점 시스템, 스킬 시스템, 스탯 투자뿐만 아니라 퀘스트 시스템, 큰 래프팅, 강화시스템, 쿨타임시스템, 가구와의 상호작용 등을 포함한
+						다양한 기능을 구현해 보았었습니다. 학교에선 Unreal 4 에 대해서 기초적인 부분 밖에 가르쳐 주지 않아 스스로 자료를 찾아가면서 대부분의 기능을 구현하였습니다.
+						예시를 들자면 인벤토리 기능을 처음 구현할 때, 어떻게 하는지도 알 수 없어서 인터넷도 검색해가며 계속 혼자서 연구하며 테스트해가며 시간을 많이 잡아먹었었지만
+						한번 구현하고 나니 그 이후의 장미창, 상점 슬롯, 퀵 슬롯과 같이 인벤토리 슬롯 기능을 응용하여 수정하면 되는 부분에 있어서는 편하게 제작하였던 경험이 있습니다. 
+						이렇게 작업을 하다 보니 자연스레 언리얼 4를 이용한 게임 제작도 익숙해졌습니다.
+						게임이 대부분 완성된 후엔 당연히 디버깅작업을 하며 버그를 수정하였었는데, 이때 최적화 작업을 전혀 안 하고 기능을 많이 구현하는 것에만 목표를 두고 게임을 만들면 안 된다는 것을 크게 깨달았습니다. 
+						버그는 다 수정하였지만 수정을 하면 할수록 엄청 비효율적인 코드가 되었었습니다. 
+						결과적으로 게임 용량도 커지고 리소스의 낭비도 컸었기에, 다음에 만들 게임에선 이 부분에 조심하여 좀 더 효율적이고 전문적으로 코드를 짜야겠다고 결심했던 계기가 되었습니다.
+						
+						학원에선 시간이 갈수록 좀 더 수준 높은 것을 배웠습니다. 각종 디자인패턴(싱글톤,FSM, 등),WinApi(카드 맞추기 찰리 서커스게임 재현)을 이용하여 게임을 만들어보고 D 3D, SQL, Server에 대한 기초도 공부하였고,
+						최종적으론 유니티 엔진을 이용하여 직접 C#스크립트를 이용하여 다양한 게임을 제작하였습니다. 스스로 기획, 에셋 수집, 월드 배치(맵디 자인), 데이터 테이블 제작도 하고 
+						인벤토리, 퀵 슬롯, 몬스터 AI, 몬스터 리젠 시스템, 아이템 사용, 상점 시스템, 스킬 시스템, 스탯 투자 등 대부분의 RPG 게임에 필수적으로 있는 시스템은 구현한 3D RPG 게임을 만들었습니다.
+						시기상 언리얼 4의 조별 과제로 3D RPG 게임을 만든 이후였기에 기능구현 있어 직접 C# Script로 순수코딩이라는 것도 있지만 시스템(기능)의 수보다는 질을 높여보자는 마인드로 임하였습니다.
+						GameManager, UiManager, SoundManager, DataTableManager 등을 Singleton 패턴을 사용하여 구현하여 리소스의 낭비(중복사용)를 줄였습니다. 그리고
+						몬스터, 몬스터의체력바, 데미지텍스 등 지속적으로 생성되는 것들은 Pooling 기능을 구현하여 죽을 때도 Destroy보다는 Setactiveself(false)를 사용하여 비활성화 시켜 Pooling List로 되돌아가게끔 하여 컴퓨터 리소스의 낭비를 줄였습니다.
+						스킬이나 아이템들도 CSV, XML 등의 다양한 데이터 불러오기 방법을 사용해보고 플레이데이터의 저장에 있어선 JSON을 사용해보기도 하는 등 데이터관리에서도 다양한 방법을 시도(공부)하였습니다.
+						확실히 언리얼 4에서 BP로 할 때와는 다르게 모든 데이터가 어느 장소에 저장되고 그 리소스 파일을 어떻게 불러오는지 코드로 보이니 확실히 게임 제작에 있어서 재미를 느꼈습니다.
+						제작이 끝난후 뒤돌아보면서 초반 게임 기획에 있어서 매우 미흡했다는 것 제작을 하면 할수록 알게 되었습니다. 초기엔 Manager 들을 세부적으로 안 나누어 Sound부분에 있어 모든 에셋에 Sound 재생오브젝트를 전부 다 달아서 일일히 Clip을 
+						재생시키는 것과 같은 일을 벌였습니다. 그러다 잘못됬다는 것을 깨닫고 사운드매니저에서 효과음을 일괄적으로 재생할 수 있도록 코드를 모두 수정하였습니다. 
+						이 경험을 통해 초기 기획을 잘해야 된다는 것을 배웠습니다. 이 게임을 제작하며 공부도 많이 되었고 다음엔 좀더 고난이도의 게임제작에 도전하고 싶어졌습니다.
+						
+						시간이 흐르다보니 4학년 2학기가 되었습니다. 보통 이때 취업준비를하지만, 전 전과+융합전공(복수전공)을 하여 졸업조건이 미달되어 이번학기에 졸업을 할 수 없었습니다.
+						기존에 RPG게임만 만들었어서 한번 새로운 장르게임 개발에 도전하고 싶어 FPS 게임에 도전 해 보기로 생각을 하였습니다. 하지만 FPS 하나 만으로는 뭔가 프로그래머적으로 보여줄 수 있는 것이 많지 않아,
+						복합장르(TPS/FPS 시점변환이 되며 FPS 플레이스타일의 RPG게임)의 게임을 유니티 엔진을 이용하여 만들어 보았습니다. 예전에 만든 RPG 게임에서 얻은 교훈이 있어서 이번에는 설계를 꼼꼼히 하고, 
+						매니저들이 코드들을 관리하게끔 하였습니다. 코드들를 짜는 방식이나 스타일은 이전에 비해 개선되었지만, 여전히 부족함을 많이 느꼇습니다. 
+						예시로 탄환이 몬스터이외에 아이템에 부딛히면 그대로 탄환이 사라진다거나 유도탄이 적을 탐색하지않고 빙글빙글도는 현상이 생기기도 하였습니다. 
+						무엇보다 맵과 같은 모든 리소스를 외부에서 따로따로 얻어와서 키메라처럼 합치다보니 서로 퀄리티부터 시작해서 사이즈, 좌표 등 손봐야 할 것이 많기도 하였습니다.
+						이로인해 어느맵에서는 잘 작동되는 코드가 다른 맵으로 가면 오류가 생기기도 하였습니다. 이러한 문제들을 해결하기 위해 다양한 시도를 해보았습니다.
+						
+						저는 게임클라이언트 제작중에서도 몬스터의 AI를 제작하는 것에 큰 재미를 느낍니다. 
+						Ai를 제작할떄 주로 FSM(유한상태기계 머신)을 사용하는데 페이즈(단계)마다 다양한 공격패턴을 사용하게 하고 게임에서 실행시켜서 움직이고 상황에 맞게 패턴을 행하는 것을 볼 때,
+						스스로 뭔가 가상의 생물을 만들었다는 것에 대해서 큰 만족감을 느낍니다. 
+						앞으로 더욱 많이 공부를 할 것이고 더욱 개선되고 효율적인 코드를 만들기 위해 노력하겠습니다. </p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>포트폴리오-김형빈</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>포트폴리오 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">언리얼4 포트폴리오 영상</div><br/>
+			<li><iframe width="100%" height="480" src="https://blog.naver.com/godkim3904/222876359058"></iframe></li><br/>
+			<div class="ui-bar ui-bar-a">유니티 포트폴리오 영상</div><br/>
+			<li><iframe width="100%" height="480" src="https://blog.naver.com/godkim3904/222876346114"></iframe></li><br/>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>포트폴리오 이미지</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="1_1.png" rel="external"><img src="1_1.png" /></a></li>
+				<li><a href="1_2.png" rel="external"><img src="1_2.png" /></a></li>
+				<li><a href="1_3.png" rel="external"><img src="1_3.png" /></a></li>
+				<li><a href="1_4.png" rel="external"><img src="1_4.png" /></a></li>
+				<li><a href="1_5.png" rel="external"><img src="1_5.png" /></a></li>
+				<li><a href="1_6.png" rel="external"><img src="1_6.png" /></a></li>
+				<li><a href="1_7.png" rel="external"><img src="1_7.png" /></a></li>
+				<li><a href="1_8.png" rel="external"><img src="1_8.png" /></a></li>
+				<li><a href="1_9.png" rel="external"><img src="1_9.png" /></a></li>
+				<li><a href="1_10.png" rel="external"><img src="1_10.png" /></a></li>
+				<li><a href="1_11.png" rel="external"><img src="1_11.png" /></a></li>
+				<li><a href="1_12.png" rel="external"><img src="1_12.png" /></a></li>
+				<li><a href="1_13.png" rel="external"><img src="1_13.png" /></a></li>
+				<li><a href="1_14.png" rel="external"><img src="1_14.png" /></a></li>
+				<li><a href="2_1.png" rel="external"><img src="2_1.png" /></a></li>
+				<li><a href="2_2.png" rel="external"><img src="2_2.png" /></a></li>
+				<li><a href="2_3.png" rel="external"><img src="2_3.png" /></a></li>
+				<li><a href="2_4.png" rel="external"><img src="2_4.png" /></a></li>
+				<li><a href="2_5.png" rel="external"><img src="2_5.png" /></a></li>
+				<li><a href="2_6.png" rel="external"><img src="2_6.png" /></a></li>
+				<li><a href="2_7.png" rel="external"><img src="2_7.png" /></a></li>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>포트폴리오-김형빈</h1>
+		</div>		
+	</div>
+
+	<div data-role="page" id="Link" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>깃허브 와 블로그 링크</h1>
+		</div>
+
+		<div data-role="content">
+		<div  style="text-align:center">
+			<img src="BlackCow.jpg">
+		</div>
+		
+		<div data-role="collapsible-set" data-theme="b" data-content-theme="e"></div>
+		<div data-role="collapsible" data-collapsed="false">
+			<h3>깃허브</h3>
+			<body>
+				<button type="button" id="btnN">Github</button>
+			</body>
+		</div>
+
+		<div data-role="collapsible">
+			<h3>블로그</h3>
+			<body>
+				<button type="button" id="btnD">Blog</button>
+			</body>
+		</div>
+
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>포트폴리오-김형빈</h1>
+		</div>	
+	</div>
+	
+	
+	<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>포트폴리오-김형빈</h1>
+	</div>
+</div>	
+</body>
+</html>
